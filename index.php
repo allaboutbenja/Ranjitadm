@@ -69,7 +69,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="logo navbar-brand" href="#">Logo</a>
+            <a class="logo navbar-brand" href="#"><img height="50" src="./imagen/logo de ranjit.jpg" alt=""></a>
             <a class="usuario dropdown-item" href="index.php?logout">Administrador</a>
         </nav>
     </header>
