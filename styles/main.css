@@ -1,5 +1,4 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-@import url('./components/header.css');
 
 @media screen and (min-width: 468px) {
     .jumbotron {
@@ -355,4 +354,24 @@ table.table .avatar {
 
 .modal form label {
     font-weight: normal;
+}
+.reportBox{
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.bg-green{
+    background-color: rgb(223, 240, 216);
+    color: rgb(60, 118, 61);;
+}
+.bg-red{
+    background-color: rgb(242, 222, 222);
+    color: rgb(169, 68, 66);;
+}
+.bg-blue{
+    background-color: rgb(51, 122, 183);
+    color: white;
 }
