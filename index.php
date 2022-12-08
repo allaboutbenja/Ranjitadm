@@ -4,6 +4,14 @@
     require './models/Category.php';
     require './models/Brand.php';
     require './models/Settings.php';
+    session_start();
+    if($_SESSION['admin'] == null) header("location:  ./login.php");
+
+    if(isset($_GET['logout'])){
+        session_unset();
+        session_destroy();
+        header("location:  ./login.php?logout"); 
+    }
 
     $db = new DatabaseMYSQL();
     $products = array();
@@ -62,7 +70,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="logo navbar-brand" href="#">Logo</a>
-            <a class="usuario dropdown-item" href="#">Nombre de Usuario</a>
+            <a class="usuario dropdown-item" href="index.php?logout">Administrador</a>
         </nav>
     </header>
     <div class="container container-main mt-5">
